@@ -594,7 +594,7 @@ class StatisticsCalculator:
                 title_lower = title.lower()  # 转换为小写以实现大小写不敏感
 
                 # 检查是否包含任何过滤词
-                contains_filter_word = all(
+                contains_filter_word = any(
                     filter_word.lower() in title_lower for filter_word in filter_words
                 )
 
@@ -618,7 +618,7 @@ class StatisticsCalculator:
                     group_key = " ".join(group)
 
                     # 检查是否有任何一个词在标题中
-                    matched = any(word.lower() in title_lower for word in group)
+                    matched = all(word.lower() in title_lower for word in group)
 
                     # 如果匹配，增加计数并添加标题，然后标记为已处理
                     if matched:
