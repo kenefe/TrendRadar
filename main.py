@@ -157,7 +157,6 @@ class DataFetcher:
         ids_list: List[Union[str, Tuple[str, str]]],
         request_interval: int = CONFIG["REQUEST_INTERVAL"],
     ) -> Tuple[Dict, Dict, List]:
-        return
         """
         爬取多个网站的数据，使用同步请求
 
@@ -1212,6 +1211,7 @@ class NewsAnalyzer:
         return html_file
 
     def run(self) -> None:
+        return
         """执行新闻分析流程"""
         # 输出当前时间信息
         now = TimeHelper.get_beijing_time()
