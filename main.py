@@ -157,6 +157,7 @@ class DataFetcher:
         ids_list: List[Union[str, Tuple[str, str]]],
         request_interval: int = CONFIG["REQUEST_INTERVAL"],
     ) -> Tuple[Dict, Dict, List]:
+        return
         """
         爬取多个网站的数据，使用同步请求
 
