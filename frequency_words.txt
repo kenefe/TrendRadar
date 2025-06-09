@@ -1,10 +1,11 @@
-小米
-HyperOS
-澎湃OS
-动画
-动效
-丝滑
-流畅
+HyperOS 动画
+澎湃OS 动画
+HyperOS 动效
+澎湃OS 动效
+HyperOS 丝滑
+澎湃OS 丝滑
+HyperOS 流畅
+澎湃OS 流畅
 !汽车
 !Su7
 !Yu7
