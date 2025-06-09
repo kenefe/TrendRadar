@@ -594,7 +594,7 @@ class StatisticsCalculator:
                 title_lower = title.lower()  # 转换为小写以实现大小写不敏感
 
                 # 检查是否包含任何过滤词
-                contains_filter_word = any(
+                contains_filter_word = all(
                     filter_word.lower() in title_lower for filter_word in filter_words
                 )
 
